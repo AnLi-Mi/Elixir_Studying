@@ -158,3 +158,15 @@ IO.puts(List.delete_at(my_list, 2)) # usuwa kolejny po wskazanym elemencie
 IO.puts(List.first(my_list))
 IO.puts(List.insert_at(my_list, 4, "extra value")) # dodaje kolejny po wskazanym elemencie
 IO.puts(List.last(my_list))
+
+
+# testing tuples
+
+my_tuple = {'ok', 'hello', 'fox'}
+
+# 1 tuple functions
+
+IO.inspect(my_tuple) # i need to use inspect instead of puts with tuples for some reason
+IO.inspect(Tuple.append(my_tuple, "chicken"))
+IO.inspect(tuple_size(my_tuple))
+IO.inspect(Tuple.insert_at(my_tuple, 2, "parrot"))
