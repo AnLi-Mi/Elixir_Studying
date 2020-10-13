@@ -78,3 +78,57 @@ IO.puts(var_sommething)
 [_, [_, var_sommething]] = [["yellow", "hippo"], [25, "third value"] ]
 
 IO.puts(var_sommething)
+
+
+# testing strings
+
+# 1 - Interpolation
+
+x = "ladnego"
+y = "grubego"
+z = "Ala ma #{y} kota"
+
+IO.puts(z)
+
+# 2 - Concatenation
+
+# 2.1
+x = "Anna"
+y = "Lipiarz"
+z = x <> " " <> y
+IO.puts(z)
+
+
+# 2.2
+x = "Anna"
+y = "Lipiarz"
+z = x <> y
+IO.puts(z)
+
+# 2.3
+
+x = "Anna"
+y = "Lipiarz"
+z = x <> " "<> y <> "-Miranda"
+IO.puts(z)
+
+# 3 - string functions
+
+my_string = "hippopotamus amphibius"
+
+IO.puts(String.length(my_string))
+IO.puts(String.reverse(my_string))
+IO.puts(String.at(my_string, 3))
+IO.puts(String.contains?(my_string, "popo"))
+IO.puts(String.ends_with?(my_string, "us"))
+IO.puts(String.capitalize(my_string))
+IO.puts(String.first(my_string))
+IO.puts(String.slice(my_string, 4, 4))
+IO.puts(String.split(my_string)) # works more like 'join' tan 'split'...
+IO.puts(String.upcase(my_string))
+
+
+
+# 3 -
+
+# 4 -
