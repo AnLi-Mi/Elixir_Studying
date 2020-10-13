@@ -53,3 +53,28 @@ b="hello"
 # nia da sie - IO.puts (rem(b,a))
 IO.puts (a==b)
 IO.puts (a===b)
+
+
+# testing pattern matching
+
+[var_1, dummy_name, var_sommething] = [["yellow", "hippo"], 25, "third variable" ]
+IO.puts(var_1)
+IO.puts(dummy_name)
+IO.puts(var_sommething)
+
+# testing empty variables
+
+#1
+[var_1, _empty_var, var_sommething] = [["yellow", "hippo"], 25, "third variable" ]
+
+IO.puts(var_1)
+IO.puts(_empty_var)
+IO.puts(var_sommething)
+
+#2
+# doesn't work - [var_1, _empty_var, var_sommething] = [["yellow", "hippo"], 25 ]
+
+#3
+[_, [_, var_sommething]] = [["yellow", "hippo"], [25, "third value"] ]
+
+IO.puts(var_sommething)
